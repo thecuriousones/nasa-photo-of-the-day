@@ -22,7 +22,7 @@ function Body (props) {
         <div>
             <button onClick={hiddenPage}>{sunImg === true ? '👉🏾Click Me👈🏾' : '🌠Home🌠'}</button> <br/>
             <br/>
-            {sunImg === true ? <img  src={clickMeGif}/> : <img  onClick={hiddenPage} src={img}/> }
+            {sunImg === true ? <img src={clickMeGif}/> : <img  onClick={hiddenPage} src={img}/> }
             {info === true ? null : <p>{description}</p>}
             {astroGif === true ? null : <img src={gif}/>}
         </div>
