@@ -25,6 +25,7 @@ function Body (props) {
             {sunImg === true ? <img src={clickMeGif}/> : <img  onClick={hiddenPage} src={img}/> }
             {info === true ? null : <p>{description}</p>}
             {astroGif === true ? null : <img src={gif}/>}
+            {astroGif === true ? <h3></h3> : <h3>I've been there</h3>}
         </div>
     )
 };
