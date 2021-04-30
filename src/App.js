@@ -3,6 +3,7 @@ import axios from 'axios'
 import "./App.css";
 import Header from './header';
 import Body from './body';
+import styled from 'styled-components'
 
 function App() {
   const [data, setData] = useState([])
@@ -28,5 +29,7 @@ function App() {
     </div>
   );
 }
+
+
 
 export default App;

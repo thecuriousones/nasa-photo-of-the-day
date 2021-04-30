@@ -1,14 +1,21 @@
 import React from 'react'
+import styled from 'styled-components'
 
 function Header (props) {
     const {data} = props;
     
     return (
         <div className="Header">
-            <h1>{data.title}</h1>
-            <h2>Date: {data.date}</h2>
+            <Title>{data.title}</Title>
+            <Date>Date: {data.date}</Date>
         </div>
     );
 };
+
+const Title = styled.h1`
+text-decoration: underline;`
+
+const Date = styled.h2`
+text-decoration: underline;`
 
 export default Header
